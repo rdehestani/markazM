@@ -1,0 +1,34 @@
+<h2 mat-dialog-title>Add User</h2>
+<div class="dialogtemp">
+<form [formGroup] = "dialogForm">
+
+    <div>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>ID:</mat-label>
+          <input formControlName="id" matInput placeholder="Enter ID...">
+        </mat-form-field>
+      </div>
+
+    <div>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Name:</mat-label>
+        <input formControlName="name" matInput placeholder="Enter Name...">
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Age:</mat-label>
+        <input formControlName="age" matInput placeholder="Enter Age...">
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Mobile:</mat-label>
+        <input formControlName="mobile" matInput placeholder="Enter Mobile...">
+      </mat-form-field>
+    </div>
+    <button mat-raised-button mat-dialog-close color="primary" type="submit" (click)="addData()" class=".demo-button + .demo-button">Add User</button>
+</form>
+</div>
